@@ -1,13 +1,12 @@
-
 body {
     background-color: #383838;
     color: #EDE9E9;
     font-style: italic;
-    margin: 10em;
     text-align: center;
+    margin: 10px;
 }
 
-.container{
+.container {
     display: grid;
     margin: 2em;
     justify-content: center;
@@ -17,8 +16,7 @@ body {
 .image-class {
     max-width: 80%;
     height: auto;
-    border: 2px solid #333;
-    margin: 10px;
+    
 }
 
 .round-container {
@@ -30,7 +28,7 @@ body {
 }
 
 .para {
-    color:white;
+    color: white;
     padding: 1em;
     text-align: left;
 }
@@ -40,7 +38,7 @@ a {
     color: black;
 }
 
-.btn {  
+.btn {
     background-color: #36baa2;
     color: black;
     border-radius: 15px;
@@ -48,4 +46,25 @@ a {
     margin: 5em 20em 5em 20em;
 }
 
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    
+    .container {
+        margin: 1em;
+    }
+    
+    .round-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .image-class {
+        max-width: 100%;
+    }
+    
+    .btn {
+        margin: 2em;
+    }
+}
 
