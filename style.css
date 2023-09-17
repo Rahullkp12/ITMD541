@@ -3,10 +3,28 @@ body {
     background-color: #383838;
     color: #EDE9E9;
     font-style: italic;
-    padding: 100px;
+    margin: 10em;
+    text-align: center;
+}
+
+.container{
+    display: grid;
+    margin: 2em;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-class {
+    max-width: 80%;
+    height: auto;
+    border: 2px solid #333;
+    margin: 10px;
 }
 
 .round-container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr 1fr;
     background-color: rgb(0, 0, 0);
     border-radius: 15px;
 }
@@ -14,6 +32,7 @@ body {
 .para {
     color:white;
     padding: 1em;
+    text-align: left;
 }
 
 a {
@@ -21,18 +40,12 @@ a {
     color: black;
 }
 
-.btn {
-    display: inline-block;
-    padding: 15px 15px;
-    font-weight: 700;
+.btn {  
     background-color: #36baa2;
     color: black;
     border-radius: 15px;
+    text-align: center;
+    margin: 5em 20em 5em 20em;
 }
 
-.container{
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    height: 20vh;  
-}
+
